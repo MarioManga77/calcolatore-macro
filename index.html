@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore Macro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+<h1>Calcolatore Macro</h1>
+
+<p>Sesso</p>
+<select id="sesso">
+    <option value="uomo">Uomo</option>
+    <option value="donna">Donna</option>
+</select>
+
+<p>Età</p>
+<input type="number" id="eta">
+
+<p>Peso (kg)</p>
+<input type="number" id="peso">
+
+<p>Altezza (cm)</p>
+<input type="number" id="altezza">
+
+<p>Attività</p>
+<select id="attivita">
+    <option value="1.2">Sedentario</option>
+    <option value="1.375">Leggera</option>
+    <option value="1.55">Moderata</option>
+    <option value="1.725">Intensa</option>
+</select>
+
+<p>Obiettivo</p>
+<select id="obiettivo">
+    <option value="dimagrimento">Dimagrimento</option>
+    <option value="mantenimento">Mantenimento</option>
+    <option value="massa">Massa</option>
+</select>
+
+<br><br>
+
+<button onclick="calcola()">CALCOLA</button>
+
+<hr>
+
+<div id="risultato"></div>
+
+<script src="app.js"></script>
+
+</div>
+</body>
+</html>
