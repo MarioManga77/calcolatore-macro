@@ -35,8 +35,16 @@ if (obiettivo === "massa") {
     target = tdee * 1.10;
 }
 
-let proteine = peso * 2;
-let grassi = peso * 1;
+let proteineKg = parseFloat(
+    document.getElementById("proteineKg").value
+);
+
+let grassiKg = parseFloat(
+    document.getElementById("grassiKg").value
+);
+
+let proteine = peso * proteineKg;
+let grassi = peso * grassiKg;
 
 let kcalProteine = proteine * 4;
 let kcalGrassi = grassi * 9;
